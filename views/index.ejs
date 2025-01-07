@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="panel-container">
+    <h1>Welcome to the Web Panel</h1>
+    <form action="/update" method="POST">
+      <label for="dashUrl">DASH URL:</label>
+      <input type="text" id="dashUrl" name="dashUrl" value="<%= urlConfig.dashUrl %>" required />
+
+      <label for="hlsUrl">HLS URL:</label>
+      <input type="text" id="hlsUrl" name="hlsUrl" value="<%= urlConfig.hlsUrl %>" required />
+
+      <button type="submit">Update URLs</button>
+    </form>
+    <br />
+    <a href="/logout">Logout</a>
+  </div>
+</body>
+</html>

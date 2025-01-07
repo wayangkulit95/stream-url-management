@@ -1,0 +1,18 @@
+{
+    "name": "youtube-stream-url-management",
+    "version": "1.0.0",
+    "description": "A web panel for managing YouTube stream URLs (DASH and HLS) with authentication and session timeout.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.1",
+      "ejs": "^3.1.8",
+      "express": "^4.17.1",
+      "express-session": "^1.17.2"
+    },
+    "author": "microtech,store",
+    "license": "MIT"
+  }
+  
